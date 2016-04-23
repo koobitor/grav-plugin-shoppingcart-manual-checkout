@@ -1,0 +1,14 @@
+{
+    "name": "flaviocopes/grav-plugin-shoppingcart-manual",
+    "description": "Manual Checkout Plugin for Grav Shopping Cart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flavio Copes",
+            "email": "copesc@gmail.com"
+        }
+    ],
+    "require": {
+        "omnipay/manual": "~2.0"
+    }
+}

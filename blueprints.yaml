@@ -1,0 +1,30 @@
+name: Shopping Cart Manual Checkout Addon
+version: 1.0.0
+description: "Add Manual checkout to the Grav Shopping Cart Plugin. This gateway is useful for processing check or direct debit payments. It simply authorizes every payment."
+icon: shopping-cart
+author:
+  name: Flavio Copes
+  email: copesc@gmail.com
+  url: http://flaviocopes.com
+homepage: http://gravshoppingcart.com
+keywords: shoppingcart, ecommerce, e-commerce, plugin, shop, cart
+readme: https://gravshoppingcart.com/docs
+bugs: https://github.com/flaviocopes/grav-plugin-shoppingcart/issues
+license: MIT
+
+dependencies:
+  - { name: shoppingcart, version: '~1.1' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
