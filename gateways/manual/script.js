@@ -20,7 +20,7 @@
             };
 
             jQuery.ajax({
-                url: ShoppingCart.settings.baseURL + ShoppingCart.settings.urls.save_order_url + '/task:pay',
+                url: ShoppingCart.settings.baseURL + ShoppingCart.settings.urls.saveOrderURL + '/task:pay',
                 data: order,
                 type: 'POST'
             })
